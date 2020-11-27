@@ -1,4 +1,5 @@
 import instruments.Drums;
+import instruments.InstrumentType;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -32,5 +33,9 @@ public class DrumTest {
         assertEquals(4000, bedumTsss.getRetailPrice(), 0.01);
     }
 
+    @Test
+    public void canGetInstrumentType(){
+        assertEquals(InstrumentType.PERCUSSION, bedumTsss.getInstrumentType());
+    }
 
 }
