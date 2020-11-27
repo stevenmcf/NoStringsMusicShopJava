@@ -45,4 +45,21 @@ public class DrumTest {
         assertEquals("Yamaha", bedumTsss.getMake());
     }
 
+    @Test
+    public void canSetModel(){
+        bedumTsss.setModel("Evolution");
+        assertEquals("Evolution", bedumTsss.getModel());
+    }
+
+    @Test
+    public void canSetNewRetailPrice(){
+        bedumTsss.setRetailPrice(3800);
+        assertEquals(3800, bedumTsss.getRetailPrice(), 0.01);
+    }
+
+    @Test
+    public void canSetNewCostPrice(){
+        bedumTsss.setCostPrice(2800);
+        assertEquals(2800, bedumTsss.getCostPrice(), 0.01);
+    }
 }
