@@ -37,5 +37,12 @@ public class DrumTest {
     public void canGetInstrumentType(){
         assertEquals(InstrumentType.PERCUSSION, bedumTsss.getInstrumentType());
     }
+//    Test setters change make, change model, change retail price, change cost price
+
+    @Test
+    public void canSetMake(){
+        bedumTsss.setMake("Yamaha");
+        assertEquals("Yamaha", bedumTsss.getMake());
+    }
 
 }
