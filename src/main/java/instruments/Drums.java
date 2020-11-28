@@ -5,7 +5,5 @@ public class Drums extends Instrument {
         super(make, model, costPrice, retailPrice, InstrumentType.PERCUSSION);
     }
 
-
-
     }
 
