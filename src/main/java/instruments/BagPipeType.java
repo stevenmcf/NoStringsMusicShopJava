@@ -1,2 +1,8 @@
-package instruments;public class BagPipeType {
+package instruments;
+
+public enum BagPipeType {
+    HIGHLAND,
+    LOWLAND,
+    BORDER,
+    ELECTRONIC,
 }
