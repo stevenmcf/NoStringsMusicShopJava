@@ -39,6 +39,11 @@ public class ShopTest {
     }
 
     @Test
+    public void getStockList(){
+        assertEquals(0, shop.getStockList().size());
+    }
+
+    @Test
     public void shopHasStock(){
         shop.addToStock(drums);
         shop.addToStock(bagPipes);
@@ -59,4 +64,6 @@ public class ShopTest {
         shop.removeItemFromStock(drums);
         assertEquals(3, shop.countStock());
     }
+
+
 }
