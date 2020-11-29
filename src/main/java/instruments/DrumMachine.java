@@ -1,8 +1,9 @@
 package instruments;
 
 import behaviours.IPlay;
+import behaviours.ISell;
 
-public class DrumMachine extends Instrument implements IPlay {
+public class DrumMachine extends Instrument implements IPlay, ISell {
     private String recordingOption;
     public DrumMachine(String make, String model, double costPrice, double retailPrice, String recordingOption) {
         super(make, model, costPrice, retailPrice, InstrumentType.ELECTRONIC);
@@ -21,4 +22,6 @@ public class DrumMachine extends Instrument implements IPlay {
     public String play() {
         return "kick, snare, low tom, mid tom, hi tom, clap, cowbell, open hi-hat, closed hi-hat, low conga, mid conga, hi conga, clave, rimshot, maracas and cymbal ";
     }
+
+    public double calculateMarkUp(){return this.getRetailPrice() - this.getCostPrice();}
 }

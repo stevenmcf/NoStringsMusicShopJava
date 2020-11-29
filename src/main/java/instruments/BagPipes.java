@@ -1,8 +1,9 @@
 package instruments;
 
 import behaviours.IPlay;
+import behaviours.ISell;
 
-public class BagPipes extends Instrument implements IPlay {
+public class BagPipes extends Instrument implements IPlay, ISell {
 
     private BagPipeType bagPipeType;
 
@@ -18,4 +19,6 @@ public class BagPipes extends Instrument implements IPlay {
     public String play() {
         return "shrill screech waaaaa Highland Cathedral";
     }
+
+    public double calculateMarkUp(){return this.getRetailPrice() - this.getCostPrice();}
 }
