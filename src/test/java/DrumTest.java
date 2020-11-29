@@ -62,4 +62,9 @@ public class DrumTest {
         bedumTsss.setCostPrice(2800);
         assertEquals(2800, bedumTsss.getCostPrice(), 0.01);
     }
+
+    @Test
+    public void canPlay() {
+        assertEquals("bedumTsss", bedumTsss.play());
+    }
 }
