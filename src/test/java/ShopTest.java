@@ -26,8 +26,21 @@ public class ShopTest {
         drums = new Drums("Ludwig", "Amber Vistalite Zep-5", 3000.00, 4000.00);
         drumMachine = new DrumMachine("Roland", "TR-08", 260.50, 330, "6 Track");
         bagPipes = new BagPipes("Duncan MacRae", "SL1", 950, 1150, BagPipeType.HIGHLAND);
+        drumSticks = new DrumSticks("Yamaha Joinery", "Beaters", 2.99, 9.99);
+        droneCords = new DroneCords("Donald MacDonald Enterprises", "Heedrum Hodrum", 21.99, 42.50);
     }
 
     @Test
     public void shopHasName(){assertEquals("No Strings Music Shop", shop.getName());}
+
+    @Test
+    public void shopHasMoneyInTheTill(){
+        assertEquals(5000, shop.getTill(), 0.01);
+    }
+
+    @Test
+    public void shopHasStock(){
+
+        assertEquals(5, shop.getStockList() );
+    }
 }
