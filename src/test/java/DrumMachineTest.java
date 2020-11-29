@@ -25,4 +25,10 @@ public class DrumMachineTest {
         assertEquals("4 Track", roland808State.getRecordingOption());
 
     }
+
+    @Test
+    public void canPlay(){
+        assertEquals("kick, snare, low tom, mid tom, hi tom, clap, cowbell, open hi-hat, closed hi-hat, low conga, mid conga, hi conga, clave, rimshot, maracas and cymbal ", roland808State.play());
+    };
+
 }
