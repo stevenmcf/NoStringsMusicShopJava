@@ -40,7 +40,11 @@ public class ShopTest {
 
     @Test
     public void shopHasStock(){
-
-        assertEquals(5, shop.getStockList() );
+        shop.addToStock(drums);
+        shop.addToStock(bagPipes);
+        shop.addToStock(drumMachine);
+        shop.addToStock(drumSticks);
+        shop.addToStock(droneCords);
+        assertEquals(5, shop.countStock() );
     }
 }

@@ -31,6 +31,12 @@ public class Shop {
         return stockList;
     }
 
+    public void addToStock(ISell musicalItem){
+        this.stockList.add(musicalItem);
+    }
+
+    public int countStock() {return this.stockList.size();}
+
 
 
 }
