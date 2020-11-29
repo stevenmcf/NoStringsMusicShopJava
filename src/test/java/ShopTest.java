@@ -47,4 +47,16 @@ public class ShopTest {
         shop.addToStock(droneCords);
         assertEquals(5, shop.countStock() );
     }
+
+    @Test
+    public void removeItemFromStock(){
+        shop.addToStock(drums);
+        shop.addToStock(bagPipes);
+        shop.addToStock(drumMachine);
+        shop.addToStock(drumSticks);
+        shop.addToStock(droneCords);
+        shop.removeItemFromStock(droneCords);
+        shop.removeItemFromStock(drums);
+        assertEquals(3, shop.countStock());
+    }
 }

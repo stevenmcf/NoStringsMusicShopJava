@@ -37,6 +37,10 @@ public class Shop {
 
     public int countStock() {return this.stockList.size();}
 
+    public void removeItemFromStock(ISell musicalItem){
+        this.stockList.remove(musicalItem);
+    }
+
 
 
 }
