@@ -1,6 +1,8 @@
 package instruments;
 
-public class BagPipes extends Instrument {
+import behaviours.IPlay;
+
+public class BagPipes extends Instrument implements IPlay {
 
     private BagPipeType bagPipeType;
 
@@ -11,5 +13,9 @@ public class BagPipes extends Instrument {
 
     public BagPipeType getBagPipeType() {
         return bagPipeType;
+    }
+
+    public String play() {
+        return "shrill screech waaaaa Highland Cathedral";
     }
 }
